@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>restaurants</h1>
+    <% @restaurants.each do |a| %>
+    <h3 class="header"><%= link_to a.name, restaurant_path(a) %></h3>
+        <h6 class="content"><%= a.category.capitalize %></h6>
+        <p class="content"><%= a.address.capitalize %></p>
+        
+    <% end %>
+</div>

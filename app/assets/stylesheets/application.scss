@@ -1,0 +1,65 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+
+html {
+    position: relative;
+    margin: 0px 0px 0px 0px; 
+}
+ body {
+    margin-bottom: 100px;
+    background-color: #B0A990;
+}
+
+.navbar {
+    background-color: #1C1C1C;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    margin: 0;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: Raleway;
+    color: white;
+}
+
+.navbar a:first-child {
+    position: absolute;
+    left: 10px;
+}
+
+.navbar a:last-child {
+    position: absolute;
+    right: 10px;
+}
+
+.footer {
+    background-color: #50858B;
+    height: 50px;
+    text-align: center;
+    font-family: Raleway;
+    color: white;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    
+}

@@ -1,0 +1,19 @@
+<div class="container">
+<h1 class="header"><%= @restaurant.name %>
+<h5><%= @restaurant.category %></h5>
+<h6><%= @restaurant.address %></h6>
+<p class="icons"><%= link_to '✎', edit_restaurant_path %><%= link_to '✘', restaurant_path, method: :delete, data: { confirm: "Are you sure?" } %></p>
+
+<%= link_to 'Add review', new_restaurant_review_path(@restaurant) %>
+
+<div class="container">
+    <h1>reviews</h1>
+    <% Review.all.each do |a| %>
+    <h3 class="header"><%= a.content %></h3>
+        <h6 class="content"><%= a.rating %></h6>        
+    <% end %>
+</div>
+
+</div>
+
+
